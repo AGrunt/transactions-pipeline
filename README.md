@@ -13,13 +13,18 @@ Transactions pipeline built with Apache Airflow and Great Expectations loads dat
 
 ## Configuration
 
+### MySQL Schema Configuration
+
+1. Connect to MySQL server instance 
+2. Create `edw` schema
+3. Execute .sql scripts `v1.1_create_table_transactions_landing.sql` and `v1.2_create_table_transactions.sql` to create tables in `edw` schema
+
 ### Airflow Providers
 
 Airflow providers are installed as a part of virtual environment creation and Python package install.
 
 ```
 pip install -r requirements.txt
-
 ```
 
 ### AirFlow Connections
@@ -95,8 +100,9 @@ Once prerequisites are installed, start Jupiter Notebook to create Great Expecta
 
 ```
 jupyter notebook
-
 ```
+
+Great Expectations is relying on environment variable substitution for database username and password configuration. Set `GE_USERNAME` and `GE_PASSWORD` environment variables accordingly before starting Airflow.
 
 ## How To Run
 
