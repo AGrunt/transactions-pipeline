@@ -1,0 +1,5 @@
+apache-airflow == 2.5.0
+airflow-provider-great-expectations == 0.1.1
+apache-airflow-providers-mysql == 4.0.1
+apache-airflow-providers-telegram > 4.0.0
+great-expectations == 0.15.42
