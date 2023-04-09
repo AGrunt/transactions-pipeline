@@ -91,7 +91,7 @@ Telegram connection is used to send notification of DAG start, task success, and
     3. **Description** - telegram connection for messaging
     4. **Login** - Leave empty
     5. **Password** - API key for Telegramm bot
-    6. **Extra** - {"chat_id": "<Chat ID for telegram gropu chat>"}
+    6. **Extra** - {"chat_id": "`<Chat ID for telegram group chat>`"}
 4. Press *Save* button
 
 ### Greate Expectations setup
